@@ -37,6 +37,11 @@
   })
 </script>
 {{ end }}
+{{ if .Site.Params.darkMode }}
+<script>
+  document.documentElement.classList.add('dark')
+</script>
+{{ end }}
 
 {{ if .Site.Params.darkModeToggle }}
 <script>
